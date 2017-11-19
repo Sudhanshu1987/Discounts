@@ -4,22 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Discounts.DBModel;
+using Discounts.Discounts;
 
 namespace Discounts.Partner
 {
     class RestaurantPartner : AbstractRestaurantPartner
     {
         private Restaurant restaurant;
-        public RestaurantPartner(Restaurant restaurant)
+        private DiscountService discountService;
+
+        //The RestaurantPartnerInterface taks to the discountService to set discounts
+        public RestaurantPartner(Restaurant restaurant, DiscountService disService)
         {
             this.restaurant = restaurant;
+            this.discountService = disService;
         }
-        public override void setDiscount(Item item)
+        public override void setDiscount(Item item, DiscountType type, double value)
         {
-            
+            discountService.setDiscount(this.restaurant, item, type, value);
         }
 
-        public override void setDiscount(List<Item> items)
+        public override void setDiscount(List<Item> items, DiscountType type, double value)
         {
             throw new NotImplementedException();
         }

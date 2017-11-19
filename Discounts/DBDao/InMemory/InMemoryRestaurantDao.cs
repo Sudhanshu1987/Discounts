@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Discounts
+namespace Discounts.DBDao.InMemory
 {
-    class Program
+    class InMemoryRestaurantDao : InmemoryBaseDao
     {
-        static void Main(string[] args)
+        void fetchAllRestaurants(string location)
         {
+
         }
     }
 }

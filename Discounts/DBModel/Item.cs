@@ -6,27 +6,13 @@ using System.Threading.Tasks;
 
 namespace Discounts.DBModel
 {
-    public class Item
+    public class Item : Entity
     {
-        private string itemId;
         private string restautantId;
         private double price;
         private string itemName;
         private string itemDesc;
-        private ItemCategory itemCategory;
-
-        public string ItemId
-        {
-            get
-            {
-                return itemId;
-            }
-
-            set
-            {
-                itemId = value;
-            }
-        }
+        private string itemCategory;
 
         public double Price
         {
@@ -54,7 +40,7 @@ namespace Discounts.DBModel
             }
         }
 
-        public ItemCategory ItemCategory
+        public string ItemCategoryId
         {
             get
             {

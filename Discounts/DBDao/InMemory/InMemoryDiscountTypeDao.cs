@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Discounts.Discount
+namespace Discounts.DBDao.InMemory
 {
-    class DiscountManager
+    class InMemoryDiscountTypeDao : InmemoryBaseDao
     {
     }
 }

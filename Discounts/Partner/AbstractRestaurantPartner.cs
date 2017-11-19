@@ -9,8 +9,8 @@ namespace Discounts.Partner
 {
     public abstract class AbstractRestaurantPartner
     {
-        public abstract void setDiscount(Item item);
-        public abstract void setDiscount(List<Item> items);
+        public abstract void setDiscount(Item item, DiscountType type, double value);
+        public abstract void setDiscount(List<Item> items, DiscountType type, double value);
         public abstract void setDiscount(ItemCategory itemCategory);
         public abstract void removeDiscount(Item item);
         public abstract void removeDiscount(List<Item> items);

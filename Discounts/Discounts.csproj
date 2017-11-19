@@ -14,7 +14,6 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,6 +43,7 @@
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.InMemory.2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.InMemory.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualC.STLCLR" />
     <Reference Include="NETStandard.Library.Extensions, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NETStandard.Library.Extensions.1.2.0\lib\netstandard1.6\NETStandard.Library.Extensions.dll</HintPath>
       <Private>True</Private>
@@ -69,11 +69,9 @@
   <ItemGroup>
     <Compile Include="DBModel\Item.cs" />
     <Compile Include="DBModel\ItemCategory.cs" />
-    <Compile Include="DBService\ItemDao.cs" />
     <Compile Include="DBService\PrototypeApi.cs" />
     <Compile Include="Discount\DiscountManager.cs" />
     <Compile Include="Partner\AbstractRestaurantPartner.cs" />
-    <Compile Include="DBModel\Restaurant.cs" />
     <Compile Include="Partner\RestaurantPartner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

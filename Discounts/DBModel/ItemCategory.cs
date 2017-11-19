@@ -1,8 +1,20 @@
 ﻿namespace Discounts.DBModel
 {
-    public class ItemCategory
+    public class ItemCategory : Entity
     {
-        private int id;
         private string categoryName;
+
+        public string CategoryName
+        {
+            get
+            {
+                return categoryName;
+            }
+
+            set
+            {
+                categoryName = value;
+            }
+        }
     }
 }
