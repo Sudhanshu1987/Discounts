@@ -9,9 +9,14 @@ namespace Discounts.Partner
 {
     class RestaurantPartner : AbstractRestaurantPartner
     {
+        private Restaurant restaurant;
+        public RestaurantPartner(Restaurant restaurant)
+        {
+            this.restaurant = restaurant;
+        }
         public override void setDiscount(Item item)
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void setDiscount(List<Item> items)

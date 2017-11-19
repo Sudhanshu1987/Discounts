@@ -6,22 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Discounts.DBModel;
 
-namespace Discounts.PrototypeApi
+namespace Discounts.DBService
 {
-    class PrototypeApi
+    public class DataBaseService
     {
-        public class ApiContext : DbContext
-        {
-            
-            public ApiContext(DbContextOptions<ApiContext> options)
-                : base(options)
-            {
+        private List<Item> ItemTable = new List<Item>();
+        private List<ItemCategory> ItemCategory = new List<ItemCategory>();
 
-            }
 
-            public DbSet<Item> Items { get; set; }
-
-            public DbSet<ItemCategory> ItemCategory { get; set; }
-        }
     }
 }
