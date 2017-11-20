@@ -9,7 +9,7 @@ namespace Discounts.DBDao
 {
     public abstract class DaoFactory
     {
-        protected readonly Dictionary<Dao, IBaseDao> daoMap;
+        protected readonly Dictionary<Dao, IBaseDao> daoMap = new Dictionary<Dao, IBaseDao>();
         public abstract IBaseDao GetDao(Dao dao);
     }
 }

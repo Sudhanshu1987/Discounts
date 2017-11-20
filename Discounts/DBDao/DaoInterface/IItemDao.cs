@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace Discounts.DBDao.DaoInterface
 {
-    interface IDiscountDao : IBaseDao
+    interface IItemDao : IBaseDao
     {
         List<Entity> FetchAll();
-        bool UpdateAll(List<Entity> entities);
-        Entity GetDiscount(string itemId, string restaurantId);
-        Entity GetDiscount(string itemId);
     }
 }

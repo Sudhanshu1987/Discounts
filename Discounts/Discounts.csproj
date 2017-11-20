@@ -67,12 +67,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBDao\Dao.cs" />
+    <Compile Include="DBDao\DaoFactory.cs" />
+    <Compile Include="DBDao\DaoInterface\IBaseDao.cs" />
+    <Compile Include="DBDao\DaoInterface\IDiscountDao.cs" />
+    <Compile Include="DBDao\DaoInterface\IDiscountTypeDao.cs" />
+    <Compile Include="DBDao\DaoInterface\IItemCategoryDao.cs" />
+    <Compile Include="DBDao\DaoInterface\IItemDao.cs" />
+    <Compile Include="DBDao\DaoInterface\IRestaurantDao.cs" />
+    <Compile Include="DBDao\InMemoryDaoFactory.cs" />
+    <Compile Include="DBDao\InMemory\InmemoryBaseDao.cs" />
+    <Compile Include="DBDao\InMemory\InMemoryDiscountDao.cs" />
+    <Compile Include="DBDao\InMemory\InMemoryDiscountTypeDao.cs" />
+    <Compile Include="DBDao\InMemory\InMemoryRestaurantDao.cs" />
+    <Compile Include="DBDao\JdbcDaoFactory.cs" />
+    <Compile Include="DBDao\Jdbc\JdbcBaseDao.cs" />
+    <Compile Include="DBModel\Discount.cs" />
+    <Compile Include="DBModel\DiscountType.cs" />
+    <Compile Include="DBModel\Entity.cs" />
+    <Compile Include="Exceptions\DuplicateObjectexception.cs" />
+    <Compile Include="DBDao\InMemory\InMemoryItemCategoryDao.cs" />
     <Compile Include="DBModel\Item.cs" />
     <Compile Include="DBModel\ItemCategory.cs" />
-    <Compile Include="DBService\PrototypeApi.cs" />
-    <Compile Include="Discount\DiscountManager.cs" />
-    <Compile Include="Partner\AbstractRestaurantPartner.cs" />
-    <Compile Include="Partner\RestaurantPartner.cs" />
+    <Compile Include="DBDao\InMemory\InMemoryItemDao.cs" />
+    <Compile Include="DBModel\Restaurant.cs" />
+    <Compile Include="Discounts\DiscountService.cs" />
+    <Compile Include="PartnerApi\DiscountApi.cs" />
+    <Compile Include="PartnerApi\IDiscountApi.cs" />
+    <Compile Include="PartnerApi\IRestaurantPartner.cs" />
+    <Compile Include="PartnerApi\RestaurantPartner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

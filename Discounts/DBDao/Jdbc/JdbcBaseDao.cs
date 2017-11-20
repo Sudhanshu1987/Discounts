@@ -16,6 +16,11 @@ namespace Discounts.DBDao.Jdbc
             throw new NotImplementedException();
         }
 
+        public Entity findByEntityId(string entityId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Entity findByEntityId(long entityId)
         {
             throw new NotImplementedException();

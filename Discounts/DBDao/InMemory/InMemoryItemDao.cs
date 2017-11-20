@@ -9,10 +9,14 @@ using System.Threading.Tasks;
 
 namespace Discounts.DBDao.InMemory
 {
-    public class InMemoryItemDao : InmemoryBaseDao
+    public class InMemoryItemDao : InmemoryBaseDao, IItemDao
     {
         public InMemoryItemDao() : base()
         {
+        }
+        public List<Entity> FetchAll()
+        {
+            return this.Entities;
         }
     }
 }

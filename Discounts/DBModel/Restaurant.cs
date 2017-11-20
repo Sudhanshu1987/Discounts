@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Discounts.DBModel
 {
-    class Restaurant : Entity
+    public class Restaurant : Entity
     {
         private string name;
         //TODO: A menu class can be seperate further containing the hierarchy. For simplicity assuming menu is list of items.

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Discounts.DBModel;
 using Discounts.Discounts;
 
-namespace Discounts.Partner
+namespace Discounts.PartnerApi
 {
-    class RestaurantPartner : AbstractRestaurantPartner
+    public class RestaurantPartner : IRestaurantPartner
     {
         private Restaurant restaurant;
         private DiscountService discountService;
@@ -19,32 +19,34 @@ namespace Discounts.Partner
             this.restaurant = restaurant;
             this.discountService = disService;
         }
-        public override void setDiscount(Item item, DiscountType type, double value)
+
+        public void setDiscount(Item item, DiscountType type, double value)
         {
             discountService.setDiscount(this.restaurant, item, type, value);
         }
 
-        public override void setDiscount(List<Item> items, DiscountType type, double value)
+        public void setDiscount(DiscountType type, double value)
+        {
+            discountService.setDiscount(type, value);
+        }
+
+        //Todo: To be implemented
+        public void setDiscount(ItemCategory itemCategory)
         {
             throw new NotImplementedException();
         }
 
-        public override void setDiscount(ItemCategory itemCategory)
+        public void removeDiscount(Item item)
         {
             throw new NotImplementedException();
         }
 
-        public override void removeDiscount(Item item)
+        public void removeDiscount(List<Item> items)
         {
             throw new NotImplementedException();
         }
 
-        public override void removeDiscount(List<Item> items)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void remmoveDiscount(ItemCategory itemCategory)
+        public void remmoveDiscount(ItemCategory itemCategory)
         {
             throw new NotImplementedException();
         }

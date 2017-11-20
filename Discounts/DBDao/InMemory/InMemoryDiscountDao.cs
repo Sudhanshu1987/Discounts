@@ -28,5 +28,12 @@ namespace Discounts.DBDao.InMemory
             var discountonParticularRestaurantItem = discounts.Where(x => x.ItemId.Equals(itemId) && x.RestaurantId.Equals(restaurantId)).FirstOrDefault();
             return discountonParticularRestaurantItem;
         }
+
+        public Entity GetDiscount(string itemId)
+        {
+            var discounts = this.Entities.Cast<DBModel.Discount>();
+            var discountonParticularRestaurantItem = discounts.Where(x => x.ItemId.Equals(itemId)).FirstOrDefault();
+            return discountonParticularRestaurantItem;
+        }
     }
 }

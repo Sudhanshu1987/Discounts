@@ -1,1 +1,14 @@
 C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Discounts.exe.config
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\obj\Debug\Discounts.csprojResolveAssemblyReference.cache
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\obj\Debug\Discounts.csproj.Discounts.exe.config
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Discounts.exe
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Discounts.pdb
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\NETStandard.Library.Extensions.dll
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\NETStandard.Library.Extensions.EntityFrameworkCore.dll
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\bin\Debug\Microsoft.EntityFrameworkCore.InMemory.xml
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\obj\Debug\Discounts.exe
+C:\Users\subarth\Documents\Projects\Discounts\Discounts\obj\Debug\Discounts.pdb
